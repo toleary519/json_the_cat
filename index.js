@@ -3,10 +3,10 @@ const fetchBreedDescription = require('./breedFetcher');
 
 const breed = process.argv[2];
 
-fetchBreedDescription(breed, (err, description) => {
+fetchBreedDescription(breed, (err, desc) => {
   if (err) {
-    console.log("Error in fetch:", err);
+    console.log(err);
   } else {
-    console.log(description);
+    console.log(desc);
   }
 });
